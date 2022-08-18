@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+body{
+    background-color: rgb(218, 218, 218);
+}
+iframe{
+    min-width: clamp(450px, 70%, 800px);
+    height: clamp(250px, 40vh, 1000px);
+    margin: 10px;
+    transition: 0.3s;
+    margin-bottom: 4vh;
+}
+iframe:hover{
+    box-shadow: 0.3px 4px 5px rgb(50, 50, 50);;
+}
+.black{
+    background-color: rgb(50, 50, 50);
+}
+.body{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+.relative{
+    position: relative;
+}
+a{
+    text-decoration: none;
+    padding: 2px 20px;
+    transition: 0.4s;
+    font-size: clamp(16px, 0.8vw, 20px);
+}
+.lak{
+    font-weight: 100;
+}
+.tezak{
+    font-weight: 600;
+}
+.upper{
+    text-transform: uppercase;
+}
+.hed{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.centar-kol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.centar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 3;
+}
+header a:hover{
+    color: rgb(210, 100, 210);
+}
+.bg{
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: -3;
+}
+main{
+    height: clamp(460px, 50vh, 600px);
+    text-align: center;
+    position: relative;
+    padding-top: 1.8rem;
+}
+* ::selection {
+    background: #c958b5;
+    color: #000;
+}
+main h1,h5,p{
+    color: white;
+}
+main p{
+    font-size: clamp(15px, 2vw, 20px);
+}
+main h1{
+    font-size: clamp(70px, 6vw, 90px);
+}
+main h5{
+    font-size: clamp(20px, 2vw, 40px);
+}
+.button{
+    background-color: rgba(150, 70, 150, 0.8);
+    border-radius: 15px;
+    padding: 12px;
+    margin: 30px;
+    width: clamp(12ch, 9%, 20ch);
+    transition: 0.5s;
+}
+.button:hover{
+    background-color: rgba(150, 70, 150);
+    box-shadow: 0px 4px 5px rgb(0, 0, 0);
+}
+.artikli{
+    height: 40vh;
+    width: 100%;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+.artikli h1,h6, .crni{
+    color: black;
+    text-align: center;
+}
+.frame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10vw;
+    margin-top: 20px;
+}
+.artikl-patern{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    min-height: 40vh;
+    margin: 10vh auto;
+    margin-top: 70px;
+}
+.artikl-info{
+    width: clamp(350px, 50vw, 500px);
+}
+.artikl-info h1{
+    font-size: clamp(35px, 3vw, 60px);
+    padding-bottom: 20px;
+}
+.artikl-info h3{
+    font-size: clamp(23px, 1.8vw, 50px);
+}
+.slika-artikla{
+    width: clamp(370px, 50vw, 500px);
+}
+.lajna{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.about-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, clamp( 180px, 20vh, 360px));
+    height: 100vh;
+    min-width: 1200px;   
+}
+.about-grid-box{
+    background-color: rgb(50, 50, 50);
+    transition: 0.4s;
+}
+.box-1 h3,h6{
+    color: rgb(50, 50, 50);
+}
+.box-1{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: clamp(4px, 95%, 45px);
+}
+.box-1 h6{
+    position: absolute;
+    inset: auto 5% 5% auto;
+}
+.gray{
+    transition: 0.9s;
+}
+.gray h1{
+    color: rgb(50, 50, 50);
+}
+.gray:hover{
+    background-color: rgb(230, 225, 235);
+}
+.about-grid-box:hover{
+    background-color: rgb(45, 45, 45);
+}
+.about-grid-box:active{
+    background-color: rgba(90, 90, 90, 0);
+}
+.like{
+    position: absolute;
+    inset: auto 10% 15% auto;
+    color: gray;
+    font-size: xx-large;
+}
+.like-border{
+    position: absolute;
+    inset: auto 15% 10% auto;
+    width: 150px;
+    height: 60px;
+    border: 3px solid black;
+}
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5rem 2rem;
+    gap: 3rem;
+}
+.black a{
+    font-size: clamp(13px, 0.8vw, 20px);
+    font-weight: 500;
+}
+.contact-box{
+    width: clamp(400px, 45%, 1000px);
+    min-height: 500px;
+    margin: 1rem;
+}
+.poz{
+    color: black;
+    margin: 5%;
+}
+.white{
+    background-color: rgb(218, 218, 218);
+    box-shadow: 3px 3px 18px black;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+}
+.contact-button{
+    width: 130px;
+    height: 70px;
+    background-color: rgb(167, 75, 167);
+    color: white;
+    border: none;
+}
+.how{
+    margin: 15px;
+}
+.inf{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+.inf h1{
+    padding-bottom: 20px;
+    font-size: clamp(30px, 2vw, 50px);
+}
+.inf p{
+    font-size: clamp(14px, 0.81vw, 24px);
+    width: 70%;
+}
+input{
+    border: none;
+    border-bottom: solid 2px rgb(60, 60, 60);
+    width: 60%;
+    height: 40%;
+    background-color: rgb(218, 218, 218);
+    margin: 0 auto;
+    color: black;
+    font-size: medium;
+    transition: 0.4s;
+}
+input:hover{
+    background-color: rgb(180, 180, 180);
+}
+input:active{
+    background-color: rgb(160, 160, 160);
+}
